@@ -7,11 +7,19 @@ using namespace std;
 int main()
 {
 	cout << "Estrutura de Dados - Fatec (2026/2)" << endl;
-
 	
-	cout << "Tipos Numericos\n";/
+	/*EXERCICIO 1*/
+	#include <climits>
+	cout << "int  max = " << INT_MAX << "\n";
+	cout << "int  min = " << INT_MIN << "\n";
+	cout << "short max = " << SHRT_MAX << "\n";
+	cout << "int  max = " << INT_MAX + 1 << "\n";
+	cout << "Tipos Numericos\n";
 	cout << "===============\n";
 	
+	/*Pergunta: O que acontece quando você soma INT_MAX + 1? Ele ultrapassa o valor máximo de bytes no INT, tornando o valor negativo. */
+	/*EXERCICIO 1*/
+
 	int i = 10;
 	short s = 18;
 	long l = 200000;
@@ -59,6 +67,21 @@ int main()
 	int dias = 0;
 	int horas = 0;
 	int minutos = 0;
+	
+	/*EXERCICIO 2*/
+	double temperaturac = 0;
+
+	cout << "Digite uma temperatura em Fahrenheit: ";
+	cin >> temperaturac;
+
+	double fahrenheit = temperaturac * 1.8 + 32;
+
+	cout << "A temperatura em Fahrenheit é:" << fahrenheit << endl;
+
+	double kelvin = temperaturac + 273.15;
+
+	cout << "A temperatura em Kelvin é:" << kelvin << endl;
+	/*EXERCICIO 2*/
 
 	cout << "Digite seu nome: ";
 	cin >> nome;
@@ -73,7 +96,6 @@ int main()
 
 	cout << "Qualquer tecla para sair...";
 	system("pause"); // somente no Windows
-
 
 }
 
